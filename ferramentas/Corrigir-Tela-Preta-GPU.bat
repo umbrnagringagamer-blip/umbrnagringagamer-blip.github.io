@@ -93,7 +93,7 @@ function Aplicar {
     # 1. Ponto de restauracao
     try {
         Enable-ComputerRestore -Drive "$env:SystemDrive\" -ErrorAction SilentlyContinue
-        Checkpoint-Computer -Description 'Antes da CorrecaoGPU' -RestorePointType MODIFY_SETTINGS -ErrorAction Stop
+        Checkpoint-Computer -Description 'Antes da CorrecaoGPU' -RestorePointType MODIFY_SETTINGS -ErrorAction Stop -WarningAction Stop
         Ok 'Ponto de restauracao criado'
     } catch { Aviso "Nao foi possivel criar ponto de restauracao (o Windows so deixa 1 a cada 24h). Seguindo com backup proprio." }
 
