@@ -1,0 +1,8 @@
+opencv-python
+numpy
+pillow
+openpyxl
+psutil
+torch
+transformers
+# opcional (leitura de texto do HUD): pytesseract + Tesseract instalado

@@ -1,0 +1,6 @@
+logs/
+revisao/
+teste_*/
+plano_limpeza*.json
+Clipes_WarThunder_relatorio.*
+__pycache__/
